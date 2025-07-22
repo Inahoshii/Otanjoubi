@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persembahan untuk Master Melly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-magic"></div>
+    <canvas id="magic-canvas"></canvas>
+
+    <div id="gift-container" class="visible">
+        <i class="fas fa-gift"></i>
+        <p>Sebuah Buku singkat yang hanya datang satu tahun sekali... Sentuh untuk membuka segelnya.</p>
+    </div>
+
+    <div id="pre-book-gif-screen" class="hidden">
+        <div class="gif-container">
+            <img src="assets/miku-cumple.gif" alt="GIF Pembuka">
+        </div>
+        <p class="continue-message">Keajaiban akan segera datang...</p>
+    </div>
+
+    <div id="book-container" class="hidden">
+        <div id="book">
+            <div id="cover" class="page">
+                <div class="front">
+                    <div class="page-content">
+                        <h1>Buku untuk Melly Hime</h1>
+                        <p class="subtitle">Tercipta pada Hari Istimewamu</p>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+
+            <div class="page paper">
+                <div class="front">
+                    <div class="page-content" style="text-align: center;">
+                        <h2 style="font-size: 1.8rem;">Untuk Melly Hime,</h2>
+                        <p style="margin-top: 1.5rem; font-style: italic; max-width: 80%;">Di hari yang istimewa ini, sebuah buku kecil tercipta dari serpihan memori dan harapan. Setiap lembarnya berisi mantra kebahagiaan yang dirangkai khusus untukmu. Bukalah lembar berikutnya...</p>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+            <div class="page paper">
+                <div class="front">
+                    <div class="page-content two-column">
+                        <div class="text-content">
+                            <h2>Memory I: I Know You Will be Star-!</h2>
+                            <p>Bintang-bintang berbisik tentang takdir gemilang. Suara Melly Hime yang memikat dan kepribadian yang ceria adalah sihir 
+                                yang akan memikat jutaan jiwa. Jalan sebagai VTuber hebat telah terbentang.
+                                </p>
+                        </div>
+                        <div class="image-content">
+                            <img src="assets/82f2ff71a581ed249c6b6a0976753d2e.jpg" alt="Gambar Mantra 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+
+            <div class="page paper">
+                <div class="front">
+                    <div class="page-content two-column">
+                        <div class="text-content">
+                            <h2>Memory II: Power Of Hope-!</h2>
+                            <p>Melly Hime, aku tau Melly selalu berusaha setiap bermain valo. Walaupun, terkadang ketidak konsistenan itu menyebalkan.
+                                Namun, suatu saat aku yakin Melly Hime akan sangat konsisten dan sangat hebat saat bermain game tersebut.
+                            *Note : pls jangan marah ke aku pas lagi kesel saat main*</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="assets/365684ca229d848a0b69c03ddd081cda.jpg" alt="Gambar Mantra 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+
+            <div class="page paper">
+                <div class="front">
+                    <div class="page-content two-column">
+                        <div class="text-content">
+                            <h2>Memory III: Unique Persona</h2>
+                            <p>Setiap tawa dan suara Melly Hime adalah sihir tersendiri yang membawa kebahagiaan. 
+                                Pesona itu adalah harta karun yang tak ternilai,
+                                yang akan selalu membuat hari-hari di sekitar Melly menjadi lebih cerah dan berwarna.
+                            </p>
+                            <p>*Note : Makasii bgt tiap kita main terus denger suara melly itu bikin naikin mood*</p>
+                        </div>
+                        <div class="image-content">
+                            <img src="assets/58cfc28ad97b65ada8a68310217a47f4.jpg" alt="Gambar Mantra 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+            
+            <div class="page paper">
+                <div class="front">
+                    <div class="page-content two-column">
+                        <div class="text-content">
+                            <h2>Memory IV: Promise-!</h2>
+                            <p>Selamat ulang tahun, Melly Hime. Semoga setiap langkah diberkahi kebahagiaan, 
+                                setiap usaha dimahkotai kesuksesan, dan setiap hari dipenuhi tawa. 
+                                Aku, Ina. akan selalu menjadi pendukung, teman, dan salah satu support system setiamu.</p>
+                        </div>
+                         <div class="image-content">
+                            <img src="assets/155e0073bcd121ea2c612ceb3b6486e2.jpg" alt="Gambar Mantra 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+
+        </div>
+
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+   <div id="final-screen" class="hidden">
+    <canvas id="final-animation-canvas"></canvas>
+    <div class="gif-container">
+        <img src="assets/arakawa-under-the-bridge-arakawa-pko.gif" alt="GIF Perayaan">
+    </div>
+    <p class="final-message">Terimakasih udah jadi salah satu teman dekat terbaik ku</p>
+    <p class="signature">-Ina</p>
+    <button id="replay-btn">Ulangi Keajaiban</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
